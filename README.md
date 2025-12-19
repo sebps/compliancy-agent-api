@@ -60,7 +60,7 @@ Response: the agent graph as a JSON file.
     { "source": "start", "target": "extractor" },
     { "source": "extractor", "target": "researcher" },
     { "source": "researcher", "target": "researcher_tools" },
-    { "source": "researcher_tools", "target": "researcher" }, // The Loop
+    { "source": "researcher_tools", "target": "researcher" }, 
     { "source": "researcher", "target": "validator" },
     { "source": "validator", "target": "end" }
   ]
