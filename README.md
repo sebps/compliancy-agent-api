@@ -48,21 +48,22 @@ Response: the agent graph as a JSON file.
 #### Example
 ```json
 {
-    nodes: [
-        { id: "start", label: "Start" },
-        { id: "extractor", label: "Step 1: Extractor" },
-        { id: "researcher", label: "Step 2: Researcher (Decision)" },
-        { id: "researcher_tools", label: "Search Tool" },
-        { id: "validator", label: "Step 3: Validator" },
-        { id: "end", label: "End" }
-    ],
-    edges: [
-        { source: "start", target: "extractor" },
-        { source: "extractor", target: "researcher" },
-        { source: "researcher", target: "researcher_tools" },
-        { source: "researcher_tools", target: "researcher" }, // The Loop
-        { source: "researcher", target: "validator" },
-        { source: "validator", target: "end" }
-    ]
+  "nodes": [
+    { "id": "start", "label": "Start" },
+    { "id": "extractor", "label": "Step 1: Extractor" },
+    { "id": "researcher", "label": "Step 2: Researcher (Decision)" },
+    { "id": "researcher_tools", "label": "Search Tool" },
+    { "id": "validator", "label": "Step 3: Validator" },
+    { "id": "end", "label": "End" }
+  ],
+  "edges": [
+    { "source": "start", "target": "extractor" },
+    { "source": "extractor", "target": "researcher" },
+    { "source": "researcher", "target": "researcher_tools" },
+    { "source": "researcher_tools", "target": "researcher" }, // The Loop
+    { "source": "researcher", "target": "validator" },
+    { "source": "validator", "target": "end" }
+  ]
 }
+```
 ```
